@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HealthCheck.DataAccess\HealthCheck.DataAccess.csproj" />
+    <ProjectReference Include="..\HealthCheck.Domain\HealthCheck.Domain.csproj" />
+    <ProjectReference Include="..\HealthCheck.ExceptionHandler\HealthCheck.ExceptionHandler.csproj" />
+    <ProjectReference Include="..\HealthCheck.Infrastructure\HealthCheck.Infrastructure.csproj" />
+    <ProjectReference Include="..\HealthCheck.Logger\HealthCheck.Logger.csproj" />
+    <ProjectReference Include="..\HealthCheck.Mapper\HealthCheck.Mapper.csproj" />
+    <ProjectReference Include="..\HealthCheck.Messaging\HealthCheck.Messaging.csproj" />
+    <ProjectReference Include="..\HealthCheck.Model\HealthCheck.Model.csproj" />
+    <ProjectReference Include="..\HealthCheck.Repository\HealthCheck.Repository.csproj" />
+    <ProjectReference Include="..\HealthCheck.Service\HealthCheck.Service.csproj" />
+  </ItemGroup>
+
+</Project>
